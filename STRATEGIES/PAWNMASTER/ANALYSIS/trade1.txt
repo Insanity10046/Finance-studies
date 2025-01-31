@@ -1,0 +1,22 @@
+Market condition
+Trend: uptrend
+Volatility: high
+Liquidity: medium
+Events: 
+1. The $2750 price level was a liquidity zone for traders to put long position on the pullback, if gold stays above $2750 it will head towards resistance:$2780-2790✅
+
+2. A competition on North America automotive industry on free trade agreement between Canada and Mexico would cause a ripple in prices
+
+
+What's the market doing? : retesting, consolidating
+
+Dominant participant type
+Timeframe: 4 HR to 1 HR
+Who's controlling price action
+Volume spikes: yes
+Breakout: yes
+
+Herding behaviour and strategy in play:
+Condition: breakout
+Participant: swing trader, hft or scalpers(sudden volume spike), institution✅
+Strategy: reversal, trend following✅, breakout = fair value gap retest✅
