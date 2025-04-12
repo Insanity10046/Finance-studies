@@ -1,6 +1,7 @@
 https://libgen.li/edition.php?id=140698446
 
 to study in this book:
+
 probability and statistics
 - random  variables
 - random walk
