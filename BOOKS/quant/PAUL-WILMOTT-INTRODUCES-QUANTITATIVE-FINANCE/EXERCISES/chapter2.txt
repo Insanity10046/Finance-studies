@@ -1,0 +1,13 @@
+1. Find the value of the following portfolios of options at expiry, as a function of the share price: 
+(a) Long one share, long one put with exercise price E, 
+(b) Long one call and one put, both with exercise price E, 
+(c) Long one call, exercise price E1, short one call, exercise price E2, where E1 < E2, 
+(d) Long one call, exercise price E1, long one put, exercise price E2. There are three cases to consider, (e) Long two calls, one with exercise price E1 and one with exercise price E2, short two calls, both with exercise price E, where E1 < E < E2. 
+
+2. What is the difference between a payoff diagram and a profit diagram? Illustrate with a portfolio of short one share, long two calls with exercise price E.
+
+3. A share currently trades at $60. A European call with exercise price $58 and expiry in three months trades at $3. The three month default-free discount rate is 5%. A put is offered on the market, with exercise price $58 and expiry in three months, for $1.50. Do any arbitrage opportunities now exist? If there is a possible arbitrage, then construct a portfolio that will take advantage of it. (This is an application of put-call parity.) 
+
+4. A three-month, 80 strike, European call option is worth $11.91. The 90 call is $4.52 and the 100 call is $1.03. How much is the butterfly spread? 
+
+5. Using the notation V(E) to mean the value of a European call option with strike E, what can you say about ∂V/∂E and ∂^2V/∂E^2 for options having the same expiration? Hint: Consider call and butterfly spreads and the absence of arbitrage. 1 I have serious doubts about the purpose of most of the math jargon.
