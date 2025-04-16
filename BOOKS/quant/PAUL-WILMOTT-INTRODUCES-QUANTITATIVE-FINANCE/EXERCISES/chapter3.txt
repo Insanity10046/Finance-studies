@@ -1,0 +1,17 @@
+1. Solve the three equations for u, v and p using the alternative condition p = 1/2 instead of the condition that the tree returns to where it started, i.e. uv = 1.
+
+2. Starting from the approximations for u and v, check that in the limit δt → 0 we recover the Black–Scholes equation. 
+
+3. A share price is currently $80. At the end of three months, it will be either $84 or $76. Ignoring interest rates, calculate the value of a three-month European call option with exercise price $79. You must use both the methods of setting up the delta-hedged portfolio, and the risk-neutral probability method.
+
+4. A share price is currently $92. At the end of one year, it will be either $86 or $98. Calculate the value of a one-year European call option with exercise price $90 using a single-step binomial tree. The riskfree interest rate is 2% p.a. with continuous compounding. You must use both the methods of setting up the delta-hedged portfolio, and the risk-neutral probability method. 
+
+5. A share price is currently $45. At the end of each of the next two months, it will change by going up $2 or going down $2. Calculate the value of a two month European call option with exercise price $44. The risk-free interest rate is 6% p.a. with continuous compounding. You must use both the methods of setting up the deltahedged portfolio, and the risk-neutral probability method.
+
+6. A share price is currently $63. At the end of each three month period, it will change by going up $3 or going down $3. Calculate the value of a six month American put option with exercise price $61. The risk-free interest rate is 4% p.a. with continuous compounding. You must use both the methods of setting up the deltahedged portfolio, and the risk-neutral probability method.
+  
+7. A share price is currently $15. At the end of three months, it will be either $13 or $17. Ignoring interest rates, calculate the value of a three-month European option with payoff max(S2 − 159,0), where S is the share price at the end of three months. You must use both the methods of setting up the delta-hedged portfolio, and the risk-neutral probability method. 
+  
+8. A share price is currently $180. At the end of one year, it will be either $203 or $152. The risk-free interest rate is 3% p.a. with continuous compounding. Consider an American put on this underlying. Find the exercise price for which holding the option for the year is equivalent to exercising immediately. This is the breakeven exercise price. What effect would a decrease in the interest rate have on this break-even price? 
+  
+9. A share price is currently $75. At the end of three months, it will be either $59 or $92. What is the risk-neutral probability that the share price increases? The risk-free interest rate is 4% p.a. with continuous compounding. 1 In this case, it is very similar to an explicit finite-difference method. We’ll see the famous Black–Scholes equation and finite-difference methods later. 2 This parameterization of the binomial method is the one explained in the appendix to this chapter. 3 If you are rusty on Taylor series then Appendix A contains a useful recap. 4 Actually it’s more like a paw. 5 Other choices are possible. For example, sometimes the probability of an up move is set equal to the probability of a down move, i.e. p = 1/2.
