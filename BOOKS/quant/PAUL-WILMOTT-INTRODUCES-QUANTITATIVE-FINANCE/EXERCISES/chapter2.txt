@@ -2,7 +2,33 @@
 (a) Long one share, long one put with exercise price E, 
 (b) Long one call and one put, both with exercise price E, 
 (c) Long one call, exercise price E1, short one call, exercise price E2, where E1 < E2, 
-(d) Long one call, exercise price E1, long one put, exercise price E2. There are three cases to consider, (e) Long two calls, one with exercise price E1 and one with exercise price E2, short two calls, both with exercise price E, where E1 < E < E2. 
+(d) Long one call, exercise price E1, long one put, exercise price E2. There are three cases to consider.
+(e) Long two calls, one with exercise price E1 and one with exercise price E2, short two calls, both with exercise price E, where E1 < E < E2. 
+Answers:
+(A): S + max(E - S,0)
+S > E -> S+0
+E > S -> S+(E-S)
+
+(B): max(S-E,0) + max(E-S,0)
+S > E -> (S-E) + 0
+S < E -> 0 + (E-S)
+S = E -> 0+0
+
+(C): max(S-E₁,0)-max(S-E₂,0)
+S > E₂ -> (S-E₁)-(S-E₂)
+S < E₁ -> 0-0
+E₁ < S < E₂ -> (S-E₁)-0
+
+(D): max(S-E₁,0)+max(E₂-S,0)
+S > E₂ -> (S-E₁) + 0 
+S < E₁ -> 0+(E₂-S)
+E₁ < S < E₂ -> (S-E₁) + (E₂-S)
+
+(E): max(S-E₁,0) + max(S-E₂,0) - 2*max(S-E,0)
+S>E₂ -> (S-E₁)+(S-E₂)-2*(S-E)
+S<E₁ -> 0+0-2*0
+E₁<S<E -> (S-E₁)+0-2*0
+E<S<E₂ -> (S-E₁)+0-2*(S-E)
 
 2. What is the difference between a payoff diagram and a profit diagram? Illustrate with a portfolio of short one share, long two calls with exercise price E.
 
