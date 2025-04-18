@@ -44,8 +44,14 @@ portfolio:
 1 share
 payoff: max(S-E,0) - max(E-S,0) + S
 -3(premium) + 1.5(premium) + 60(short stock) = 58.5
+Invest 58.5 at 5% for 3 months → grows to:
+58.5×(1.05)^0.25≈59.22
 
-
+at expiry, profits:
+S > 58 -> 59.22 - 58(exercise call) - 0(short put meaningless)
+= $1.22
+S < 58 -> 59.22 - 58(exercise put) - 0(call meaningless)
+ 
 
 
 4. A three-month, 80 strike, European call option is worth $11.91. The 90 call is $4.52 and the 100 call is $1.03. How much is the butterfly spread? 
