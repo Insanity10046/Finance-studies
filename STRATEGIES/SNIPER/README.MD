@@ -1,1 +1,1 @@
-(../thumbnail.png)
+![1](../SNIPER/thumbnail.png)
