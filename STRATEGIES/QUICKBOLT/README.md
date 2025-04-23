@@ -34,6 +34,7 @@ volatility model - measurement of sigma(volatility)
 - In sample vs Out sample
 - Monte Carlo simulation
 - Time series Analysis
+- Sensitivity Analysis(windows on historical volatility)
 
 ## Execution & Monitoring:
 - ## Execution:
