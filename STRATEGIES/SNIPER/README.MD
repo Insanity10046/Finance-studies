@@ -4,9 +4,9 @@
 
 A strategy targetting market regime shifts(ADX) in combination with the trend strength(ADX) and movement speed of the trend(volatility: ATR).
 
-measurement model - measurement of trend strength
-statistic model - market regime shift
-execution model - focus on trade executions under met market conditions
+- measurement model - measurement of trend strength
+- statistic model - market regime shift
+- execution model - focus on trade executions under met market conditions
 
 ## Sources: 
 - ## Data:
