@@ -1,5 +1,5 @@
 ![1](../QUICKBOLT/thumbnail.png)
-# QUICKBOLT MODEL
+# QUICKBOLT STRATEGY
 A strategy focusing on volatility model that where multiple strategies will derive from.
 
 volatility model - measurement of sigma(volatility)
