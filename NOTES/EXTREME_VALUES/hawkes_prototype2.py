@@ -1,4 +1,3 @@
-
 import yfinance as M_YF;
 import numpy as M_NP;
 import scipy as M_SCI;
@@ -89,7 +88,7 @@ def hawkes_adaptive(events, current_time, window_size, mu, alpha, beta, delta_t)
     lambda_t = hawkes_intensity(window_events, current_time, mu, alpha, beta)
     prob = continuation_probability(lambda_t, delta_t)
 
-    return prob#, mu, alpha, beta
+    return prob, mu, alpha, beta
 
 # -------------------- #
 #       FUNCTION       #
@@ -142,6 +141,9 @@ def IN_EXTREME(TODAY,RETURN, THRESHOLD, VAR, PRICE):
 # -------------------- #
 #         LOOP         #
 # -------------------- #
+mu = 0.1
+alpha = 0.5
+beta = 1.0
 
 for current in daily_returns.index:
     recent = GET_RECENT(current, '365D', daily_returns).dropna();
@@ -176,12 +178,13 @@ for current in daily_returns.index:
         IN_EXTREME(current,today_return, threshold, var, price)
         # predict continuation of extreme
         if in_extreme_event:
-            continuation_prob = hawkes_adaptive(extreme_history,current.date(),365,0.1,0.5,1.0,5
-                )
+            continuation_prob, mu, alpha, beta = hawkes_adaptive(extreme_history,current.date(),365,mu,alpha,beta,5)
             print(continuation_prob)
             if continuation_prob > 0.5:
                 extreme_continuation.append((current, price))
                 print(f"⚠️ Crash likely to continue (Probability: {continuation_prob:.0%})")
+            if (current.date() - extreme_history[-1]).days >= 5:
+                extreme_history = []
     except Exception as e:
         error = str(e)
         if error == 'not enough values to unpack (expected 4, got 3)' or error == "object of type 'numpy.float64' has no len()":
