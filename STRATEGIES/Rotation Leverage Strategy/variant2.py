@@ -65,7 +65,7 @@ class ForexExampleAlgorithm(QCAlgorithm):
         if slice[self._ticker.symbol].close > self._sma.current.value:
             #self._tbill.set_leverage(1);
             if self.iv_percentile is not None:
-                elif self.iv_percentile < 50:
+                if self.iv_percentile < 50:
                     # use leverage
                     self._ticker.set_leverage(2);
                     # buy
